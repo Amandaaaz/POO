@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>POO</title>
+</head>
+
+<body>
+    <div class="objeto" id="carro">
+        <h2>Carro 🛻</h2>
+        <p>Modelo: <span id="modelo">Fusca</span></p>
+        <p>Cor: <span id="cor">Azul</span></p>
+        <p>Velocidade Atual: <span id="velocidade">0 km/h</span></p>
+        <button onclick="acelerarCarro()">Acelerar</button>
+        <button onclick="frearCarro()">Frear</button>
+        <button onclick="pintarCarro('Vermelho')">Pintar de Vermelho</button>
+    </div>
+
+    <div class="objeto" id="livro">
+        <h2>Livro 📓</h2>
+        <p>Título: <span id="titulo">Dom Casmurro</span></p>
+        <p>Autor: <span id="autor">Machado de Assis</span></p>
+        <p>Número de Páginas: <span id="paginas">256</span></p>
+        <button onclick="abrirLivro()">Abrir</button>
+        <button onclick="fecharLivro()">Fechar</button>
+        <button onclick="lerLivro()">Ler</button>
+    </div>
+
+    <div class="objeto" id="contaBancaria">
+        <h2>Conta Bancária 🏦</h2>
+        <p>Nome do Titular: <span id="titular">João</span></p>
+        <p>Saldo: <span id="saldo">1000</span> USD</p>
+        <p>Número da Conta: <span id="conta">12345</span></p>
+        <button onclick="depositar()">Depositar 100 USD</button>
+        <button onclick="sacar()">Sacar 50 USD</button>
+        <button onclick="consultarSaldo()">Consultar Saldo</button>
+    </div>
+
+    <div class="objeto" id="redeSocial">
+        <h2>Rede Social 📱</h2>
+        <p>Nome do Usuário: <span id="usuario">Alice</span></p>
+        <p>Número de Seguidores: <span id="seguidores">500</span></p>
+        <p>Número de Publicações: <span id="publicacoes">100</span></p>
+        <button onclick="publicarPost()">Publicar Post</button>
+        <button onclick="seguirUsuario('Bob')">Seguir Bob</button>
+        <button onclick="verFeed()">Ver Feed</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
