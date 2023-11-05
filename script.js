@@ -31,8 +31,8 @@ let carro = {
 
     // Livro
     let livro = {
-    titulo: "Dom Casmurro",
-    autor: "Machado de Assis",
+    titulo: "Gyo",
+    autor: "Junji Ito",
     paginas: 256,
     aberto: false,
     abrir: function () {
@@ -70,7 +70,7 @@ let carro = {
         this.saldo -= 50;
     },
     consultarSaldo: function () {
-        alert("Saldo atual: " + this.saldo + " USD");
+        alert("Saldo atual: " + this.saldo + " BRL");
     },
     };
 

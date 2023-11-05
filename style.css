@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Change to wrap for responsiveness */
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -18,12 +19,13 @@ body {
     padding: 20px;
     margin: 10px;
     text-align: center;
-    width: 80%; /* Largura ajustada para dispositivos móveis */
+    width: 300px;
+    height: 320px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    background-color: #8cbfafea;
+    background-color: #8cbfafe3;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -34,7 +36,7 @@ button {
 }
 
 button:hover {
-    background-color: #8cbfafad;
+    background-color: #8cbfaf94;
 }
 
 h2 {
@@ -53,4 +55,28 @@ p {
 span {
     font-weight: bold;
     color: #b7cc18;
+}
+
+#carro h2 {
+    background-color: #7b8a84;
+}
+
+#livro h2 {
+    background-color: #7b8a84;
+}
+
+#contaBancaria h2 {
+    background-color: #7b8a84;
+}
+
+#redeSocial h2 {
+    background-color: #7b8a84;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .objeto {
+        width: 100%; 
+        margin: 10px 0; 
+    }
 }
